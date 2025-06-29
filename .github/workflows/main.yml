@@ -19,7 +19,7 @@ jobs:
         run: dotnet build -c Release /warnaserror
 
       - name: test
-        run: dotnet test --no-build -c Release /p:CollectCoverage=true /p:Threshold=80 /p:ThresholdType=branch
+        run: dotnet test --no-build -c Release /p:CollectCoverage=true /p:Threshold=90 /p:ThresholdType=branch
 
       - name: publish
         run: dotnet publish --no-build -p:PublishDir=./dist source/Mono.API/Mono.API.csproj
