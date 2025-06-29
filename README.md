@@ -1,2 +1,3 @@
-# mono
-Core application
+# Mono
+
+Acme Sprocket Co. Core Application
