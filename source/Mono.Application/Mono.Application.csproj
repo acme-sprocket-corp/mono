@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mono.Domain\Mono.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
