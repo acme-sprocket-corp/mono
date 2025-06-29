@@ -4,6 +4,8 @@
 
 namespace Mono.API
 {
+    using Scalar.AspNetCore;
+
     /// <summary>
     /// Main entry class.
     /// </summary>
@@ -23,6 +25,7 @@ namespace Mono.API
             var app = builder.Build();
 
             app.MapOpenApi();
+            app.MapScalarApiReference();
 
             app.UseHttpsRedirection();
 
