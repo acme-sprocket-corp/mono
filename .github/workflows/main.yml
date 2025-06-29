@@ -10,7 +10,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - uses: actions/setup-dotnet@v4
+      - name: setup
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
+    
+      - name: build
+        run: dotnet build -c Release
+
+      - name: test
+        run: dotnet test --no-build -c Release
 
