@@ -29,5 +29,5 @@ jobs:
         with:
           app-name: asc-mono-app-dev
           publish-profile: ${{ secrets.app_mono_dev }}
-          package: "./dist"
+          package: "source/Mono.API/dist"
 
